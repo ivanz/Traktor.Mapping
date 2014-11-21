@@ -1,0 +1,22 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Editor.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Window.Resources>
+        <CollectionViewSource x:Name="MappingsListSource" Source="{Binding}" x:Key="mappingsListSource">
+        </CollectionViewSource>
+    </Window.Resources>
+
+    <Grid>
+        <DockPanel Margin="10,10,10,10.5">
+            <DockPanel Height="27" DockPanel.Dock="Top" Margin="5">
+                <Label Content="Search:" VerticalAlignment="Center"/>
+                <TextBox TextWrapping="Wrap" Text="sdfsdfsdf" Width="436" Padding="0,5" DockPanel.Dock="Right"/>
+            </DockPanel>
+            <DataGrid x:Name="MappingsGrid" IsReadOnly="True" ItemsSource="{Binding Source={StaticResource ResourceKey=mappingsListSource}}" CanUserSortColumns="False"/>
+        </DockPanel>
+
+    </Grid>
+</Window>

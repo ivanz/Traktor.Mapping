@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F96A8CC6-BC2F-4F6C-95DF-B2EE102F0CBA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TraktorMapping.TSI</RootNamespace>
+    <AssemblyName>TraktorMapping.TSI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Format\Device.cs" />
+    <Compile Include="Format\DeviceData.cs" />
+    <Compile Include="Format\DeviceMappingsContainer.cs" />
+    <Compile Include="Format\DevicePorts.cs" />
+    <Compile Include="Format\DevicesList.cs" />
+    <Compile Include="Format\DeviceTarget.cs" />
+    <Compile Include="Format\DeviceTargetInfo.cs" />
+    <Compile Include="Format\DIOI.cs" />
+    <Compile Include="Format\DVST.cs" />
+    <Compile Include="Format\Frame.cs" />
+    <Compile Include="Format\Mapping.cs" />
+    <Compile Include="Format\MappingControllerType.cs" />
+    <Compile Include="Format\MappingFileComment.cs" />
+    <Compile Include="Format\MappingInteractionMode.cs" />
+    <Compile Include="Format\MappingResolution.cs" />
+    <Compile Include="Format\MappingsContainer.cs" />
+    <Compile Include="Format\MappingSettings.cs" />
+    <Compile Include="Format\MappingsList.cs" />
+    <Compile Include="Format\MappingTargetDeck.cs" />
+    <Compile Include="Format\MappingType.cs" />
+    <Compile Include="Format\MidiDefinition.cs" />
+    <Compile Include="Format\MidiDefinitionsContainer.cs" />
+    <Compile Include="Format\MidiEncoderMode.cs" />
+    <Compile Include="Format\MidiInDefinitions.cs" />
+    <Compile Include="Format\MidiNoteBinding.cs" />
+    <Compile Include="Format\MidiNoteBindingList.cs" />
+    <Compile Include="Format\MidiOutDefinitions.cs" />
+    <Compile Include="Format\TargetType.cs" />
+    <Compile Include="Format\TraktorControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TsiFile.cs" />
+    <Compile Include="Utils\StreamExtensions.cs" />
+    <Compile Include="Format\VersionInfo.cs" />
+    <Compile Include="Utils\Writer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commands.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
