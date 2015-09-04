@@ -21,7 +21,7 @@ namespace TraktorMapping.TSI.Utils
         public Writer(Stream stream)
         {
             if (stream == null)
-                throw new ArgumentNullException("stream", "stream is null.");
+                throw new ArgumentNullException(nameof(stream), "stream is null.");
             _stream = stream;
         }
 

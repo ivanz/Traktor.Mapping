@@ -66,9 +66,9 @@ namespace TraktorMapping.TSI.Format
         private TraktorControl(int id, string name, string category, TargetType target)
         {
             if (String.IsNullOrEmpty(name))
-                throw new ArgumentException("name is null or empty.", "name");
+                throw new ArgumentException("name is null or empty.", nameof(name));
             if (String.IsNullOrEmpty(category))
-                throw new ArgumentException("category is null or empty.", "category");
+                throw new ArgumentException("category is null or empty.", nameof(category));
 
             Id = id;
             Name = name;
