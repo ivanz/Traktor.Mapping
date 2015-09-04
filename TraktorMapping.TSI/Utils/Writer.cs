@@ -11,6 +11,10 @@ namespace TraktorMapping.TSI.Utils
         private class FrameTracker
         {
             public readonly int HeaderSize = 2*4; // 4 bytes header + 4 bytes size
+
+            /// <summary>
+            /// The position in the stream where the size of the frame should be written to
+            /// </summary>
             public long SizeOffsetInStream { get; set; }
             public int Size { get; set; }
         }
