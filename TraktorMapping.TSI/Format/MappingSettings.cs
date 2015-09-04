@@ -78,7 +78,7 @@ namespace TraktorMapping.TSI.Format
         public int LedBlend { get; set; }
         public int Unknown29 { get; set; }
         // this field is actually a public float under the hood
-        private MappingResolution Resolution { get; set; }
+        public MappingResolution Resolution { get; set; }
         public int Unknown30 { get; set; }
 
         public override void Write(Writer writer)

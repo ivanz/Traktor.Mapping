@@ -14,7 +14,7 @@ namespace TraktorMapping.TSI.Format
             Target = (DeviceTarget) stream.ReadInt32BigE();
         }
 
-        private DeviceTarget Target { get; set; }
+        public DeviceTarget Target { get; set; }
 
         public override void Write(Writer writer)
         {
