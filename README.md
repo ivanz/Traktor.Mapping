@@ -1,6 +1,8 @@
 ## Builds
-
-[![Build status](https://ci.appveyor.com/api/projects/status/tg19igluhf8l5ewe?svg=true)](https://ci.appveyor.com/project/ivanz/traktor-mapping)
+|   Branch  |   Status   |
+|------------|------|
+| master     | [![Build status](https://ci.appveyor.com/api/projects/status/tg19igluhf8l5ewe/branch/master?svg=true)](https://ci.appveyor.com/project/ivanz/traktor-mapping/branch/master)  |
+| -all-      | [![Build status](https://ci.appveyor.com/api/projects/status/tg19igluhf8l5ewe?svg=true)](https://ci.appveyor.com/project/ivanz/traktor-mapping) |
 
 ## What is this?
 
