@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules for Traktor Mapping" ToolsVersion="14.0">
+  <Rules AnalyzerId="RefactoringEssentials" RuleNamespace="RefactoringEssentials">
+    <Rule Id="RECS0070" Action="None" />
+    <Rule Id="RECS0091" Action="None" />
+    <Rule Id="RECS0145" Action="None" />
+  </Rules>
+</RuleSet>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraktorMapping.TSI", "TraktorMapping.TSI\TraktorMapping.TSI.csproj", "{F96A8CC6-BC2F-4F6C-95DF-B2EE102F0CBA}"
 EndProject
@@ -14,6 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D25D52
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{755D2009-05DF-4BB2-B816-ECEBF81D9240}"
+	ProjectSection(SolutionItems) = preProject
+		Code Analysis.ruleset = Code Analysis.ruleset
 	EndProjectSection
 EndProject
 Global
