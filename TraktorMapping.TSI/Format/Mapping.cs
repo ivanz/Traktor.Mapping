@@ -19,7 +19,6 @@ namespace TraktorMapping.TSI.Format
 
         public int MidiNoteBindingId { get; set; }
 
-        // Seems to always be 0x00000000
         public MappingType Type { get; set; }
 
         // Basically what UI Control this mapping is for

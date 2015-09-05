@@ -51,9 +51,10 @@ namespace TraktorMapping.TSI.Format
         public bool Invert { get; set; }
         public bool SoftTakeover { get; set; }
 
-        // 1% in the Traktor UI corresponds to 0.5f
-        // Traktor sets this to 300% / 15f when 
-        // in Interaction mode is Direct
+        /// <summary>
+        /// 1% in the Traktor UI corresponds to 0.5f Traktor sets this to 
+        /// 300% / 15f when in Interaction mode is Direct
+        /// </summary>
         public float RotarySensitivity { get; set; }
         public float RotaryAcceleration { get; set; }
         public int Unknown10 { get; set; }
@@ -77,7 +78,6 @@ namespace TraktorMapping.TSI.Format
         public int LedInvert { get; set; }
         public int LedBlend { get; set; }
         public int Unknown29 { get; set; }
-        // this field is actually a public float under the hood
         public MappingResolution Resolution { get; set; }
         public int Unknown30 { get; set; }
 
@@ -93,9 +93,6 @@ namespace TraktorMapping.TSI.Format
             writer.WriteBigE(Invert);
             writer.WriteBigE(SoftTakeover);
 
-            // 1% in the Traktor UI corresponds to 0.5f
-            // Traktor sets this to 300% / 15f when 
-            // in Interaction mode is Direct
             writer.WriteBigE(RotarySensitivity);
             writer.WriteBigE(RotaryAcceleration);
             writer.WriteBigE(Unknown10);
@@ -103,7 +100,6 @@ namespace TraktorMapping.TSI.Format
             writer.WriteBigE(SetValueTo);
             writer.WriteWideStringBigE(Comment);
 
-            // Traktor Control Id
             writer.WriteBigE(ModifierOneId);
             writer.WriteBigE(Unknown15);
             writer.WriteBigE(ModifierOneValue);
@@ -119,7 +115,6 @@ namespace TraktorMapping.TSI.Format
             writer.WriteBigE(LedInvert);
             writer.WriteBigE(LedBlend);
             writer.WriteBigE(Unknown29);
-            // this field is actually a writer.WriteBE(hood
             writer.WriteBigE((int)Resolution);
             writer.WriteBigE(Unknown30);
 

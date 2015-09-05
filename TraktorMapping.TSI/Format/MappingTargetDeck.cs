@@ -22,5 +22,6 @@ namespace TraktorMapping.TSI.Format
         RemixDeck4Slot1 = 12,
         RemixDeck4Slot2 = 13,
         RemixDeck4Slot3 = 14,
-        RemixDeck4Slot4 = 15,}
+        RemixDeck4Slot4 = 15,
+    }
 }

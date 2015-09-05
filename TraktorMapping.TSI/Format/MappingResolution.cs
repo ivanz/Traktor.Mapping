@@ -10,5 +10,6 @@ namespace TraktorMapping.TSI.Format
         Min = 0x0000803D,
         Default = 0x0000803D,
         Coarse = 0x0000003E,
-        Switch = 0x0000003F,}
+        Switch = 0x0000003F,
+    }
 }
